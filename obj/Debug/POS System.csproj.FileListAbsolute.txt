@@ -1,0 +1,356 @@
+C:\Users\Admin\Downloads\POS System\bin\Debug\POS System.exe.config
+C:\Users\Admin\Downloads\POS System\bin\Debug\POS System.exe
+C:\Users\Admin\Downloads\POS System\bin\Debug\POS System.pdb
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS System.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.Properties.Resources.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS System.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS System.exe
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS System.pdb
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.Form1.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmBrand.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmBrandList.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmCategory.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmCategoryList.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmProduct.resources
+C:\Users\Admin\Downloads\POS System\obj\Debug\POS_System.frmProductList.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\POS System.exe.config
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\POS System.exe
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\POS System.pdb
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\MetroFramework.Design.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\MetroFramework.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\stdole.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.Form1.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmAdjustment.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmBrand.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmBrandList.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmCancelDetails.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmCategory.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmCategoryList.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmChangePassword.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmChart.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmDashboard.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmDiscount.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmInventoryReport.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmLookUp.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmPOS.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmProduct.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmProductList.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmQty.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmReceipt.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmRecords.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmReportSold.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmSearchProductStockin.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmSecurity.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmSettle.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmSoldItems.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmStockIn.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmStore.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmUserAccount.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmVendor.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmVendorList.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.frmVoid.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS_System.Properties.Resources.resources
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\RdlCompile.cache
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\RdlCompile.compiled
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.csproj.CopyComplete
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.exe
+C:\Users\Admin\Desktop\Project F3\POS\POS System\obj\Debug\POS System.pdb
+E:\POS SYSTEM\bin\Debug\x86\SqlServerSpatial160.dll
+E:\POS SYSTEM\bin\Debug\x64\SqlServerSpatial160.dll
+E:\POS SYSTEM\bin\Debug\POS System.exe.config
+E:\POS SYSTEM\bin\Debug\POS System.exe
+E:\POS SYSTEM\bin\Debug\POS System.pdb
+E:\POS SYSTEM\bin\Debug\MetroFramework.Design.dll
+E:\POS SYSTEM\bin\Debug\MetroFramework.dll
+E:\POS SYSTEM\bin\Debug\MetroFramework.Fonts.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\POS SYSTEM\bin\Debug\Tulpep.NotificationWindow.dll
+E:\POS SYSTEM\bin\Debug\EnvDTE.dll
+E:\POS SYSTEM\bin\Debug\stdole.dll
+E:\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\POS SYSTEM\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\POS SYSTEM\obj\Debug\POS System.csproj.AssemblyReference.cache
+E:\POS SYSTEM\obj\Debug\POS_System.Form1.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmAdjustment.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmBrand.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmBrandList.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmCancelDetails.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmCategory.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmCategoryList.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmChangePassword.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmChart.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmDashboard.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmDiscount.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmInventoryReport.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmLookUp.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmPOS.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmProduct.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmProductList.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmQty.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmReceipt.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmRecords.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmReportSold.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmSearchProductStockin.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmSecurity.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmSettle.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmSoldItems.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmStockIn.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmStore.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmUserAccount.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmVendor.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmVendorList.resources
+E:\POS SYSTEM\obj\Debug\POS_System.frmVoid.resources
+E:\POS SYSTEM\obj\Debug\POS_System.Properties.Resources.resources
+E:\POS SYSTEM\obj\Debug\POS System.csproj.GenerateResource.cache
+E:\POS SYSTEM\obj\Debug\POS System.csproj.CoreCompileInputs.cache
+E:\POS SYSTEM\obj\Debug\POS System.csproj.CopyComplete
+E:\POS SYSTEM\obj\Debug\POS System.exe
+E:\POS SYSTEM\obj\Debug\POS System.pdb
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\POS System.exe.config
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\POS System.exe
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\POS System.pdb
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\MetroFramework.Design.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\MetroFramework.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\stdole.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.Form1.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmAdjustment.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmBrand.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmBrandList.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmCancelDetails.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmCategory.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmCategoryList.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmChangePassword.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmChart.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmDashboard.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmDiscount.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmInventoryReport.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmLookUp.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmPOS.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmProduct.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmProductList.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmQty.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmReceipt.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmRecords.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmReportSold.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmSearchProductStockin.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmSecurity.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmSettle.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmSoldItems.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmStockIn.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmStore.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmUserAccount.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmVendor.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmVendorList.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.frmVoid.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS_System.Properties.Resources.resources
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\RdlCompile.cache
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\RdlCompile.compiled
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.csproj.CopyComplete
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.exe
+C:\Users\Admin\Desktop\Project F3\POS V2\POS\POS SYSTEM\obj\Debug\POS System.pdb
