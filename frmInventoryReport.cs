@@ -123,7 +123,7 @@ namespace POS_System
             }
         }
 
-        public void LoadSoldItems(string sql, string sellingPeriod)
+        public void LoadSoldItems(string sql, string sellingPeriod, string networth, string profit, string loss)
         {
             try
             {
@@ -146,10 +146,16 @@ namespace POS_System
                 ReportParameter pDate = new ReportParameter("pDate", sellingPeriod);
                 ReportParameter pStore = new ReportParameter("pStore", dbcon.getStoreName());
                 ReportParameter pAddress = new ReportParameter("pAddress", dbcon.getStoreAddress());
+                ReportParameter pNetworth = new ReportParameter("pNetworth", networth);
+                ReportParameter pProfit = new ReportParameter("pProfit", profit);
+                ReportParameter pLoss = new ReportParameter("pLoss", loss);
                 // Setting Report Parameter 
                 reportViewer1.LocalReport.SetParameters(pDate);
                 reportViewer1.LocalReport.SetParameters(pStore);
                 reportViewer1.LocalReport.SetParameters(pAddress);
+                reportViewer1.LocalReport.SetParameters(pNetworth);
+                reportViewer1.LocalReport.SetParameters(pProfit);
+                reportViewer1.LocalReport.SetParameters(pLoss);
 
                 // Initliaze report data source 
                 rptDataSource = new ReportDataSource("DataSet1", dataSet.Tables["dtSoldItems"]);

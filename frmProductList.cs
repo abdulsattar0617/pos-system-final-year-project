@@ -33,7 +33,7 @@ namespace POS_System
             dataGridView1.Rows.Clear();
             cn.Open();
             String query = "SELECT " +
-                            " p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.reorder " +
+                            " p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.cost_price , p.price, p.reorder " +
                             " FROM tblProduct AS p " +
                             " INNER JOIN " +
                             " tblBrand AS b " +
@@ -47,7 +47,7 @@ namespace POS_System
             while (dr.Read())
             {
                 i++;
-                dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+                dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
 
             }
             dr.Close(); 
@@ -77,8 +77,9 @@ namespace POS_System
                 frm.txtPdesc.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
                 frm.cboBrand.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 frm.cboCategory.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                frm.txtPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                frm.txtReorder.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                frm.txtCostPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                frm.txtPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                frm.txtReorder.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
                 frm.LoadCategory();
                 frm.LoadBrand();
                 frm.ShowDialog(); 

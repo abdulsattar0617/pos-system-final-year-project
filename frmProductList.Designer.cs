@@ -44,18 +44,19 @@ namespace POS_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -153,7 +154,7 @@ namespace POS_System
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 21);
+            this.label1.Size = new System.Drawing.Size(210, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "PRODUCT LIST";
             // 
@@ -183,6 +184,7 @@ namespace POS_System
             this.Column4,
             this.Column3,
             this.Column5,
+            this.Column9,
             this.Column6,
             this.Column7,
             this.Edit,
@@ -208,57 +210,92 @@ namespace POS_System
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 72;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(989, 604);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::POS_System.Properties.Resources.pencil;
+            this.dataGridViewImageColumn1.MinimumWidth = 9;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 175;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::POS_System.Properties.Resources.delete__2_;
+            this.dataGridViewImageColumn2.MinimumWidth = 9;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 175;
+            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "#";
+            this.Column1.MinimumWidth = 9;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 39;
+            this.Column1.Width = 67;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "PCODE";
+            this.Column2.MinimumWidth = 9;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 72;
+            this.Column2.Width = 124;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "BARCODE";
+            this.Column8.MinimumWidth = 9;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 88;
+            this.Column8.Width = 153;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "DESCRIPTION";
+            this.Column4.MinimumWidth = 9;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 175;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "BRAND";
+            this.Column3.MinimumWidth = 9;
             this.Column3.Name = "Column3";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "CATEGORY";
+            this.Column5.MinimumWidth = 9;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 94;
+            this.Column5.Width = 164;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column9.HeaderText = "COST PRICE";
+            this.Column9.MinimumWidth = 9;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 172;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column6.HeaderText = "PRICE";
+            this.Column6.MinimumWidth = 9;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 64;
+            this.Column6.Width = 112;
             // 
             // Column7
             // 
@@ -266,42 +303,31 @@ namespace POS_System
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column7.HeaderText = "RE-ORDER";
+            this.Column7.MinimumWidth = 9;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 93;
+            this.Column7.Width = 161;
             // 
             // Edit
             // 
             this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Edit.HeaderText = "";
             this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.MinimumWidth = 9;
             this.Edit.Name = "Edit";
-            this.Edit.Width = 5;
+            this.Edit.Width = 9;
             // 
             // Delete
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "";
             this.Delete.Image = global::POS_System.Properties.Resources.delete;
+            this.Delete.MinimumWidth = 9;
             this.Delete.Name = "Delete";
-            this.Delete.Width = 5;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::POS_System.Properties.Resources.pencil;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::POS_System.Properties.Resources.delete__2_;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.Delete.Width = 9;
             // 
             // frmProductList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 644);
             this.Controls.Add(this.dataGridView1);
@@ -337,6 +363,7 @@ namespace POS_System
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewImageColumn Edit;

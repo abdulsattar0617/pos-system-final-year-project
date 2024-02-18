@@ -99,6 +99,14 @@ namespace POS_System
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblNetworth = new System.Windows.Forms.Label();
+            this.cbFilterSoldItems = new System.Windows.Forms.ComboBox();
+            this.lblLoss = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblProfit = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.linkChartSoldItems = new System.Windows.Forms.LinkLabel();
             this.linkLoadDataSoldItems = new System.Windows.Forms.LinkLabel();
             this.linkSoldItems = new System.Windows.Forms.LinkLabel();
@@ -242,8 +250,8 @@ namespace POS_System
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 40);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(892, 540);
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(892, 472);
             this.metroTabControl1.TabIndex = 3;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -253,7 +261,7 @@ namespace POS_System
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(884, 498);
+            this.tabPage1.Size = new System.Drawing.Size(884, 497);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "TOP SELLING";
             // 
@@ -264,9 +272,8 @@ namespace POS_System
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 448);
+            this.panel2.Size = new System.Drawing.Size(884, 447);
             this.panel2.TabIndex = 3;
-           
             // 
             // dataGridViewTopSelling
             // 
@@ -314,15 +321,17 @@ namespace POS_System
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTopSelling.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTopSelling.RowHeadersVisible = false;
+            this.dataGridViewTopSelling.RowHeadersWidth = 72;
             this.dataGridViewTopSelling.RowTemplate.Height = 25;
             this.dataGridViewTopSelling.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewTopSelling.Size = new System.Drawing.Size(510, 448);
+            this.dataGridViewTopSelling.Size = new System.Drawing.Size(510, 447);
             this.dataGridViewTopSelling.TabIndex = 6;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "#";
+            this.Column1.MinimumWidth = 9;
             this.Column1.Name = "Column1";
             this.Column1.Width = 37;
             // 
@@ -330,6 +339,7 @@ namespace POS_System
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "PCODE";
+            this.Column5.MinimumWidth = 9;
             this.Column5.Name = "Column5";
             this.Column5.Width = 67;
             // 
@@ -337,6 +347,7 @@ namespace POS_System
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column6.HeaderText = "DESCRIPTION";
+            this.Column6.MinimumWidth = 9;
             this.Column6.Name = "Column6";
             // 
             // Column8
@@ -345,6 +356,7 @@ namespace POS_System
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column8.HeaderText = "QTY";
+            this.Column8.MinimumWidth = 9;
             this.Column8.Name = "Column8";
             this.Column8.Width = 52;
             // 
@@ -354,6 +366,7 @@ namespace POS_System
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column18.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column18.HeaderText = "TOTAL SALES";
+            this.Column18.MinimumWidth = 9;
             this.Column18.Name = "Column18";
             this.Column18.Width = 94;
             // 
@@ -363,7 +376,7 @@ namespace POS_System
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(559, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(325, 448);
+            this.panel9.Size = new System.Drawing.Size(325, 447);
             this.panel9.TabIndex = 8;
             // 
             // chartTopSelling
@@ -379,7 +392,7 @@ namespace POS_System
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartTopSelling.Series.Add(series1);
-            this.chartTopSelling.Size = new System.Drawing.Size(325, 448);
+            this.chartTopSelling.Size = new System.Drawing.Size(325, 447);
             this.chartTopSelling.TabIndex = 7;
             this.chartTopSelling.Text = "chart1";
             // 
@@ -447,7 +460,7 @@ namespace POS_System
             this.linkTopSelling.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkTopSelling.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkTopSelling.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkTopSelling.Location = new System.Drawing.Point(753, 14);
+            this.linkTopSelling.Location = new System.Drawing.Point(752, 14);
             this.linkTopSelling.Name = "linkTopSelling";
             this.linkTopSelling.Size = new System.Drawing.Size(123, 17);
             this.linkTopSelling.TabIndex = 12;
@@ -490,7 +503,7 @@ namespace POS_System
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(884, 498);
+            this.tabPage2.Size = new System.Drawing.Size(884, 430);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "SOLD ITEMS";
             // 
@@ -532,7 +545,7 @@ namespace POS_System
             dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewSoldItems.DefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewSoldItems.EnableHeadersVisualStyles = false;
-            this.dataGridViewSoldItems.Location = new System.Drawing.Point(0, 50);
+            this.dataGridViewSoldItems.Location = new System.Drawing.Point(0, 122);
             this.dataGridViewSoldItems.Name = "dataGridViewSoldItems";
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle14.BackColor = System.Drawing.Color.MintCream;
@@ -543,15 +556,17 @@ namespace POS_System
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewSoldItems.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewSoldItems.RowHeadersVisible = false;
+            this.dataGridViewSoldItems.RowHeadersWidth = 72;
             this.dataGridViewSoldItems.RowTemplate.Height = 25;
             this.dataGridViewSoldItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewSoldItems.Size = new System.Drawing.Size(884, 448);
+            this.dataGridViewSoldItems.Size = new System.Drawing.Size(884, 389);
             this.dataGridViewSoldItems.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn1.HeaderText = "#";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 37;
             // 
@@ -559,6 +574,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.HeaderText = "PCODE";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 67;
             // 
@@ -566,6 +582,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn3.HeaderText = "DESCRIPTION";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Column2
@@ -574,6 +591,7 @@ namespace POS_System
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column2.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column2.HeaderText = "PRICE";
+            this.Column2.MinimumWidth = 9;
             this.Column2.Name = "Column2";
             this.Column2.Width = 62;
             // 
@@ -583,6 +601,7 @@ namespace POS_System
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn4.HeaderText = "QTY";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 52;
             // 
@@ -592,6 +611,7 @@ namespace POS_System
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column4.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column4.HeaderText = "DISCOUNT";
+            this.Column4.MinimumWidth = 9;
             this.Column4.Name = "Column4";
             this.Column4.Width = 86;
             // 
@@ -601,12 +621,21 @@ namespace POS_System
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column3.HeaderText = "TOTAL";
+            this.Column3.MinimumWidth = 9;
             this.Column3.Name = "Column3";
             this.Column3.Width = 65;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.lblNetworth);
+            this.panel4.Controls.Add(this.cbFilterSoldItems);
+            this.panel4.Controls.Add(this.lblLoss);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.lblProfit);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.linkChartSoldItems);
             this.panel4.Controls.Add(this.linkLoadDataSoldItems);
             this.panel4.Controls.Add(this.linkSoldItems);
@@ -617,8 +646,109 @@ namespace POS_System
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(884, 50);
+            this.panel4.Size = new System.Drawing.Size(884, 119);
             this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(447, 53);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 17);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "TOTAL NETWORTH";
+            // 
+            // lblNetworth
+            // 
+            this.lblNetworth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNetworth.BackColor = System.Drawing.Color.Black;
+            this.lblNetworth.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNetworth.ForeColor = System.Drawing.Color.Lime;
+            this.lblNetworth.Location = new System.Drawing.Point(569, 46);
+            this.lblNetworth.Name = "lblNetworth";
+            this.lblNetworth.Size = new System.Drawing.Size(296, 30);
+            this.lblNetworth.TabIndex = 24;
+            this.lblNetworth.Text = "0.00";
+            this.lblNetworth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cbFilterSoldItems
+            // 
+            this.cbFilterSoldItems.AutoCompleteCustomSource.AddRange(new string[] {
+            "SORT BY QTY",
+            "SORT BY TOTAL AMOUNT"});
+            this.cbFilterSoldItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFilterSoldItems.FormattingEnabled = true;
+            this.cbFilterSoldItems.Items.AddRange(new object[] {
+            "SORT BY QTY",
+            "SORT BY TOTAL AMOUNT"});
+            this.cbFilterSoldItems.Location = new System.Drawing.Point(322, 11);
+            this.cbFilterSoldItems.Name = "cbFilterSoldItems";
+            this.cbFilterSoldItems.Size = new System.Drawing.Size(170, 21);
+            this.cbFilterSoldItems.Sorted = true;
+            this.cbFilterSoldItems.TabIndex = 23;
+            // 
+            // lblLoss
+            // 
+            this.lblLoss.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLoss.BackColor = System.Drawing.Color.Black;
+            this.lblLoss.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoss.ForeColor = System.Drawing.Color.Lime;
+            this.lblLoss.Location = new System.Drawing.Point(569, 81);
+            this.lblLoss.Name = "lblLoss";
+            this.lblLoss.Size = new System.Drawing.Size(296, 30);
+            this.lblLoss.TabIndex = 22;
+            this.lblLoss.Text = "0.00";
+            this.lblLoss.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(447, 88);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 17);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "TOTAL LOSS";
+            // 
+            // lblProfit
+            // 
+            this.lblProfit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblProfit.BackColor = System.Drawing.Color.Black;
+            this.lblProfit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfit.ForeColor = System.Drawing.Color.Lime;
+            this.lblProfit.Location = new System.Drawing.Point(115, 81);
+            this.lblProfit.Name = "lblProfit";
+            this.lblProfit.Size = new System.Drawing.Size(296, 30);
+            this.lblProfit.TabIndex = 20;
+            this.lblProfit.Text = "0.00";
+            this.lblProfit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(15, 88);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 17);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "TOTAL PROFIT";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(15, 53);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 17);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "TOTAL SALES";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // linkChartSoldItems
             // 
@@ -630,7 +760,7 @@ namespace POS_System
             this.linkChartSoldItems.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkChartSoldItems.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkChartSoldItems.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkChartSoldItems.Location = new System.Drawing.Point(556, 14);
+            this.linkChartSoldItems.Location = new System.Drawing.Point(764, 11);
             this.linkChartSoldItems.Name = "linkChartSoldItems";
             this.linkChartSoldItems.Size = new System.Drawing.Size(71, 17);
             this.linkChartSoldItems.TabIndex = 16;
@@ -649,7 +779,7 @@ namespace POS_System
             this.linkLoadDataSoldItems.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkLoadDataSoldItems.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLoadDataSoldItems.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkLoadDataSoldItems.Location = new System.Drawing.Point(322, 14);
+            this.linkLoadDataSoldItems.Location = new System.Drawing.Point(530, 11);
             this.linkLoadDataSoldItems.Name = "linkLoadDataSoldItems";
             this.linkLoadDataSoldItems.Size = new System.Drawing.Size(99, 17);
             this.linkLoadDataSoldItems.TabIndex = 15;
@@ -668,7 +798,7 @@ namespace POS_System
             this.linkSoldItems.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkSoldItems.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkSoldItems.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkSoldItems.Location = new System.Drawing.Point(427, 14);
+            this.linkSoldItems.Location = new System.Drawing.Point(635, 11);
             this.linkSoldItems.Name = "linkSoldItems";
             this.linkSoldItems.Size = new System.Drawing.Size(123, 17);
             this.linkSoldItems.TabIndex = 13;
@@ -684,12 +814,13 @@ namespace POS_System
             this.lblTotal.BackColor = System.Drawing.Color.Black;
             this.lblTotal.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.Lime;
-            this.lblTotal.Location = new System.Drawing.Point(646, 11);
+            this.lblTotal.Location = new System.Drawing.Point(115, 46);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(230, 30);
+            this.lblTotal.Size = new System.Drawing.Size(296, 30);
             this.lblTotal.TabIndex = 12;
             this.lblTotal.Text = "0.00";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // dateToSoldItems
             // 
@@ -725,7 +856,7 @@ namespace POS_System
             this.tabPage3.Controls.Add(this.panel5);
             this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(884, 498);
+            this.tabPage3.Size = new System.Drawing.Size(884, 497);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CRITICAL STOCKS";
             // 
@@ -779,15 +910,17 @@ namespace POS_System
             dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.RowHeadersWidth = 72;
             this.dataGridView3.RowTemplate.Height = 25;
             this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(884, 448);
+            this.dataGridView3.Size = new System.Drawing.Size(884, 447);
             this.dataGridView3.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn5.HeaderText = "#";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 37;
             // 
@@ -795,6 +928,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn6.HeaderText = "PCODE";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 67;
             // 
@@ -802,24 +936,29 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn7.HeaderText = "BARCODE";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 82;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.HeaderText = "DESCRIPTION";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 175;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn9.HeaderText = "BRAND";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn10.HeaderText = "CATEGORY";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.Width = 89;
             // 
@@ -827,6 +966,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn11.HeaderText = "PRICE";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.Width = 62;
             // 
@@ -836,6 +976,7 @@ namespace POS_System
             dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle17;
             this.Column7.HeaderText = "RE-ORDER";
+            this.Column7.MinimumWidth = 9;
             this.Column7.Name = "Column7";
             this.Column7.Width = 87;
             // 
@@ -845,6 +986,7 @@ namespace POS_System
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column9.DefaultCellStyle = dataGridViewCellStyle18;
             this.Column9.HeaderText = "STOCK ON HAND";
+            this.Column9.MinimumWidth = 9;
             this.Column9.Name = "Column9";
             this.Column9.Width = 81;
             // 
@@ -869,7 +1011,7 @@ namespace POS_System
             this.linkCriticalStocks.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkCriticalStocks.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkCriticalStocks.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkCriticalStocks.Location = new System.Drawing.Point(753, 14);
+            this.linkCriticalStocks.Location = new System.Drawing.Point(752, 14);
             this.linkCriticalStocks.Name = "linkCriticalStocks";
             this.linkCriticalStocks.Size = new System.Drawing.Size(123, 17);
             this.linkCriticalStocks.TabIndex = 2;
@@ -884,7 +1026,7 @@ namespace POS_System
             this.tabPage4.Controls.Add(this.panel6);
             this.tabPage4.Location = new System.Drawing.Point(4, 38);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(884, 498);
+            this.tabPage4.Size = new System.Drawing.Size(884, 497);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "INVENTORY LIST";
             // 
@@ -938,15 +1080,17 @@ namespace POS_System
             dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.RowHeadersWidth = 72;
             this.dataGridView4.RowTemplate.Height = 25;
             this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(884, 448);
+            this.dataGridView4.Size = new System.Drawing.Size(884, 447);
             this.dataGridView4.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn12.HeaderText = "#";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.Width = 37;
             // 
@@ -954,6 +1098,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn13.HeaderText = "PCODE";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 67;
             // 
@@ -961,24 +1106,29 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn14.HeaderText = "BARCODE";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             this.dataGridViewTextBoxColumn14.Width = 82;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.HeaderText = "DESCRIPTION";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 175;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn16.HeaderText = "BRAND";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn17.HeaderText = "CATEGORY";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.Width = 89;
             // 
@@ -986,6 +1136,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn18.HeaderText = "PRICE";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.Width = 62;
             // 
@@ -995,6 +1146,7 @@ namespace POS_System
             dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewTextBoxColumn19.HeaderText = "RE-ORDER";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.Width = 87;
             // 
@@ -1004,6 +1156,7 @@ namespace POS_System
             dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewTextBoxColumn20.HeaderText = "STOCK ON HAND";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.Width = 81;
             // 
@@ -1028,7 +1181,7 @@ namespace POS_System
             this.linkInventoryList.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkInventoryList.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkInventoryList.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkInventoryList.Location = new System.Drawing.Point(753, 14);
+            this.linkInventoryList.Location = new System.Drawing.Point(752, 14);
             this.linkInventoryList.Name = "linkInventoryList";
             this.linkInventoryList.Size = new System.Drawing.Size(123, 17);
             this.linkInventoryList.TabIndex = 1;
@@ -1043,7 +1196,7 @@ namespace POS_System
             this.tabPage5.Controls.Add(this.panel7);
             this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(884, 498);
+            this.tabPage5.Size = new System.Drawing.Size(884, 497);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "CANCELLED ORDER";
             // 
@@ -1100,15 +1253,17 @@ namespace POS_System
             dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCancelledOrder.RowHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewCancelledOrder.RowHeadersVisible = false;
+            this.dataGridViewCancelledOrder.RowHeadersWidth = 72;
             this.dataGridViewCancelledOrder.RowTemplate.Height = 25;
             this.dataGridViewCancelledOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCancelledOrder.Size = new System.Drawing.Size(884, 448);
+            this.dataGridViewCancelledOrder.Size = new System.Drawing.Size(884, 447);
             this.dataGridViewCancelledOrder.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn21.HeaderText = "#";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.Width = 37;
             // 
@@ -1116,6 +1271,7 @@ namespace POS_System
             // 
             this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column10.HeaderText = "TRANS. NO";
+            this.Column10.MinimumWidth = 9;
             this.Column10.Name = "Column10";
             this.Column10.Width = 82;
             // 
@@ -1123,6 +1279,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn22.HeaderText = "PCODE";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
             this.dataGridViewTextBoxColumn22.Width = 67;
             // 
@@ -1130,12 +1287,14 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn23.HeaderText = "DESCRIPTION";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             // 
             // Column11
             // 
             this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column11.HeaderText = "PRICE";
+            this.Column11.MinimumWidth = 9;
             this.Column11.Name = "Column11";
             this.Column11.Width = 62;
             // 
@@ -1145,6 +1304,7 @@ namespace POS_System
             dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn24.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewTextBoxColumn24.HeaderText = "QTY";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.Width = 52;
             // 
@@ -1152,6 +1312,7 @@ namespace POS_System
             // 
             this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column12.HeaderText = "TOTAL";
+            this.Column12.MinimumWidth = 9;
             this.Column12.Name = "Column12";
             this.Column12.Width = 65;
             // 
@@ -1159,6 +1320,7 @@ namespace POS_System
             // 
             this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column13.HeaderText = "DATE";
+            this.Column13.MinimumWidth = 9;
             this.Column13.Name = "Column13";
             this.Column13.Width = 59;
             // 
@@ -1166,6 +1328,7 @@ namespace POS_System
             // 
             this.Column15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column15.HeaderText = "VOID BY";
+            this.Column15.MinimumWidth = 9;
             this.Column15.Name = "Column15";
             this.Column15.Width = 67;
             // 
@@ -1173,6 +1336,7 @@ namespace POS_System
             // 
             this.Column16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column16.HeaderText = "CANCELLED BY";
+            this.Column16.MinimumWidth = 9;
             this.Column16.Name = "Column16";
             this.Column16.Width = 101;
             // 
@@ -1180,6 +1344,7 @@ namespace POS_System
             // 
             this.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column14.HeaderText = "REASON";
+            this.Column14.MinimumWidth = 9;
             this.Column14.Name = "Column14";
             this.Column14.Width = 75;
             // 
@@ -1187,6 +1352,7 @@ namespace POS_System
             // 
             this.Column17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column17.HeaderText = "ACTION";
+            this.Column17.MinimumWidth = 9;
             this.Column17.Name = "Column17";
             this.Column17.Width = 70;
             // 
@@ -1235,7 +1401,7 @@ namespace POS_System
             this.linkCancelledOrder.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkCancelledOrder.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkCancelledOrder.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkCancelledOrder.Location = new System.Drawing.Point(753, 14);
+            this.linkCancelledOrder.Location = new System.Drawing.Point(752, 14);
             this.linkCancelledOrder.Name = "linkCancelledOrder";
             this.linkCancelledOrder.Size = new System.Drawing.Size(123, 17);
             this.linkCancelledOrder.TabIndex = 12;
@@ -1279,7 +1445,7 @@ namespace POS_System
             this.tabPage6.Controls.Add(this.panel8);
             this.tabPage6.Location = new System.Drawing.Point(4, 38);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(884, 498);
+            this.tabPage6.Size = new System.Drawing.Size(884, 497);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "STOCK IN HISTORY";
             // 
@@ -1332,15 +1498,17 @@ namespace POS_System
             dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dateGridViewStockInHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dateGridViewStockInHistory.RowHeadersVisible = false;
+            this.dateGridViewStockInHistory.RowHeadersWidth = 72;
             this.dateGridViewStockInHistory.RowTemplate.Height = 25;
             this.dateGridViewStockInHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dateGridViewStockInHistory.Size = new System.Drawing.Size(884, 448);
+            this.dateGridViewStockInHistory.Size = new System.Drawing.Size(884, 447);
             this.dateGridViewStockInHistory.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn25.HeaderText = "#";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             this.dataGridViewTextBoxColumn25.ReadOnly = true;
             this.dataGridViewTextBoxColumn25.Width = 37;
@@ -1349,6 +1517,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn26.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             this.dataGridViewTextBoxColumn26.ReadOnly = true;
             this.dataGridViewTextBoxColumn26.Visible = false;
@@ -1358,6 +1527,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn27.HeaderText = "REF #";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             this.dataGridViewTextBoxColumn27.ReadOnly = true;
             this.dataGridViewTextBoxColumn27.Width = 57;
@@ -1366,6 +1536,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn28.HeaderText = "PCODE";
+            this.dataGridViewTextBoxColumn28.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
             this.dataGridViewTextBoxColumn28.Width = 67;
@@ -1374,6 +1545,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn29.HeaderText = "DESCRIPTION";
+            this.dataGridViewTextBoxColumn29.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
             this.dataGridViewTextBoxColumn29.ReadOnly = true;
             // 
@@ -1381,6 +1553,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn30.HeaderText = "QTY";
+            this.dataGridViewTextBoxColumn30.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             this.dataGridViewTextBoxColumn30.Width = 52;
             // 
@@ -1388,6 +1561,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn31.HeaderText = "STOCK IN DATE";
+            this.dataGridViewTextBoxColumn31.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
             this.dataGridViewTextBoxColumn31.ReadOnly = true;
             this.dataGridViewTextBoxColumn31.Width = 76;
@@ -1396,6 +1570,7 @@ namespace POS_System
             // 
             this.dataGridViewTextBoxColumn32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn32.HeaderText = "STOCK IN BY";
+            this.dataGridViewTextBoxColumn32.MinimumWidth = 9;
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
             this.dataGridViewTextBoxColumn32.ReadOnly = true;
             this.dataGridViewTextBoxColumn32.Width = 76;
@@ -1405,9 +1580,10 @@ namespace POS_System
             this.colDelete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colDelete.HeaderText = "";
             this.colDelete.Image = global::POS_System.Properties.Resources.delete;
+            this.colDelete.MinimumWidth = 9;
             this.colDelete.Name = "colDelete";
             this.colDelete.Visible = false;
-            this.colDelete.Width = 5;
+            this.colDelete.Width = 9;
             // 
             // panel8
             // 
@@ -1453,7 +1629,7 @@ namespace POS_System
             this.linkStockInHistory.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.linkStockInHistory.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkStockInHistory.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.linkStockInHistory.Location = new System.Drawing.Point(753, 14);
+            this.linkStockInHistory.Location = new System.Drawing.Point(752, 14);
             this.linkStockInHistory.Name = "linkStockInHistory";
             this.linkStockInHistory.Size = new System.Drawing.Size(123, 17);
             this.linkStockInHistory.TabIndex = 17;
@@ -1498,6 +1674,7 @@ namespace POS_System
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::POS_System.Properties.Resources.delete__2_;
+            this.dataGridViewImageColumn1.MinimumWidth = 9;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
             // frmRecords
@@ -1505,7 +1682,7 @@ namespace POS_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(892, 580);
+            this.ClientSize = new System.Drawing.Size(892, 512);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1651,5 +1828,13 @@ namespace POS_System
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
         private System.Windows.Forms.DataGridViewImageColumn colDelete;
+        private System.Windows.Forms.Label lblProfit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblLoss;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbFilterSoldItems;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNetworth;
     }
 }

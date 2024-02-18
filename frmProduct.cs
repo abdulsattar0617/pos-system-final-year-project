@@ -83,9 +83,9 @@ namespace POS_System
                     // inserting new product details 
                     cn.Open();
                     String query = " INSERT INTO tblProduct " +
-                                    " (pcode, barcode, pdesc, bid, cid, price, reorder) " + 
+                                    " (pcode, barcode, pdesc, bid, cid, cost_price, price, reorder) " + 
                                     " VALUES " +
-                                    " (@pcode, @barcode, @pdesc, @bid, @cid, @price, @reorder); ";
+                                    " (@pcode, @barcode, @pdesc, @bid, @cid, @cost_price, @price, @reorder); ";
 
                     cm = new SqlCommand(query, cn);
                     cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
@@ -93,6 +93,7 @@ namespace POS_System
                     cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
                     cm.Parameters.AddWithValue("@bid", bid);
                     cm.Parameters.AddWithValue("@cid", cid);
+                    cm.Parameters.AddWithValue("@cost_price", double.Parse(txtCostPrice.Text));
                     cm.Parameters.AddWithValue("@price", double.Parse(txtPrice.Text));
                     cm.Parameters.AddWithValue("@reorder", int.Parse(txtReorder.Text));
                     cm.ExecuteNonQuery(); 
@@ -163,9 +164,9 @@ namespace POS_System
                     dr.Close();
                     cn.Close();
 
-                    // inserting new product details 
+                    // update product details 
                     cn.Open();
-                    String query = " UPDATE tblProduct SET barcode = @barcode, pdesc = @pdesc, bid = @bid, cid = @cid, price = @price, reorder = @reorder WHERE pcode like @pcode ;";
+                    String query = " UPDATE tblProduct SET barcode = @barcode, pdesc = @pdesc, bid = @bid, cid = @cid, cost_price = @cost_price, price = @price, reorder = @reorder WHERE pcode like @pcode ;";
 
 
                     cm = new SqlCommand(query, cn);
@@ -174,6 +175,7 @@ namespace POS_System
                     cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
                     cm.Parameters.AddWithValue("@bid", bid);
                     cm.Parameters.AddWithValue("@cid", cid);
+                    cm.Parameters.AddWithValue("@cost_price", double.Parse(txtCostPrice.Text));
                     cm.Parameters.AddWithValue("@price", double.Parse(txtPrice.Text));
                     cm.Parameters.AddWithValue("@reorder", int.Parse(txtReorder.Text));
                     cm.ExecuteNonQuery();
@@ -206,6 +208,11 @@ namespace POS_System
             {
                 e.Handled = true; 
             }
+        }
+
+        private void frmProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

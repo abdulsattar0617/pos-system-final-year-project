@@ -42,8 +42,8 @@ namespace POS_System
                 cn.Close();
 
                 // Report Parameters 
-                ReportParameter pVatable = new ReportParameter("pVatable", this.frmPOSInstance.lblVatable.Text);
-                ReportParameter pVat = new ReportParameter("pVat", this.frmPOSInstance.lblVat.Text);
+                ReportParameter pAmount = new ReportParameter("pAmount", this.frmPOSInstance.lblAmount.Text);
+                ReportParameter pGST = new ReportParameter("pGST", this.frmPOSInstance.lblGst.Text);
                 ReportParameter pDiscount = new ReportParameter("pDiscount", this.frmPOSInstance.lblDiscount.Text);
                 ReportParameter pTotal = new ReportParameter("pTotal", this.frmPOSInstance.lblTotal.Text);
                 ReportParameter pCash = new ReportParameter("pCash", pcash);
@@ -57,8 +57,8 @@ namespace POS_System
                 ReportParameter pGSTNumber = new ReportParameter("pGSTNumber", dbcon.getStoreGSTNo());
 
                 // Setting Report Parameter
-                reportViewer1.LocalReport.SetParameters(pVatable);
-                reportViewer1.LocalReport.SetParameters(pVat);
+                reportViewer1.LocalReport.SetParameters(pAmount);
+                reportViewer1.LocalReport.SetParameters(pGST);
                 reportViewer1.LocalReport.SetParameters(pDiscount);
                 reportViewer1.LocalReport.SetParameters(pTotal);
                 reportViewer1.LocalReport.SetParameters(pCash);

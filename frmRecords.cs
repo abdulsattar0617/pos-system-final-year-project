@@ -12,8 +12,10 @@ namespace POS_System
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
         SqlDataReader dr;
-        string sortAttribute = "qty";
-        string[,] sortOptions = { { "SORT BY QTY", "qty" }, { "SORT BY TOTAL AMOUNT", "total" } };
+        string sortAttributeTopSelling = "qty";
+        string[,] sortOptionsTopSelling = { { "SORT BY QTY", "qty" }, { "SORT BY TOTAL AMOUNT", "total" }};
+        string[,] sortOptionsSoldItems = { { "SORT BY PROFIT", "c.price - p.cost_price" }, { "SORT BY LOSS", "(CASE WHEN (p.cost_price - c.price) < 0 THEN 0 ELSE (p.cost_price - c.price) END)" }, { "ALL", "all" } };
+        string sortAttributeSoldItems = "c.price - p.cost_price";
         public frmRecords()
         {
             InitializeComponent();
@@ -25,16 +27,24 @@ namespace POS_System
             this.Dispose(); 
         }
 
-        public void LoadSortByOptions()
+        public void LoadSortByOptionsTopSelling()
         {
             cboSortBy.Items.Clear();
 
             for (int i=0; i < 2 ; i++ )
             {
-                cboSortBy.Items.Add(sortOptions[i, 0]); 
+                cboSortBy.Items.Add(sortOptionsTopSelling[i, 0]); 
             }
         }
+        public void LoadSortByOptionsSoldItems()
+        {
+            cbFilterSoldItems.Items.Clear();
 
+            for (int i = 0; i < 3; i++)
+            {
+                cbFilterSoldItems.Items.Add(sortOptionsSoldItems[i, 0]);
+            }
+        }
         public void LoadTopSellingRecord()
         {
             int i = 0;
@@ -43,16 +53,16 @@ namespace POS_System
             string dateFrom = $"{dateFromTopSelling.Value.Year}-{dateFromTopSelling.Value.Month}-{dateFromTopSelling.Value.Day}";
             string dateTo = $"{dateToTopSelling.Value.Year}-{dateToTopSelling.Value.Month}-{dateToTopSelling.Value.Day}";
             
-            if (cboSortBy.Text.Equals(this.sortOptions[0,0]))
+            if (cboSortBy.Text.Equals(this.sortOptionsTopSelling[0,0]))
             {
-                sortAttribute = this.sortOptions[0, 1];
+                sortAttributeTopSelling = this.sortOptionsTopSelling[0, 1];
 
-            } else if (cboSortBy.Text.Equals(this.sortOptions[1, 0]))
+            } else if (cboSortBy.Text.Equals(this.sortOptionsTopSelling[1, 0]))
             {
-                sortAttribute = this.sortOptions[1, 1];
+                sortAttributeTopSelling = this.sortOptionsTopSelling[1, 1];
             }
 
-            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(SUM(qty), 0) as 'qty', ISNULL(SUM(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {sortAttribute} DESC;";
+            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(SUM(qty), 0) as 'qty', ISNULL(SUM(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {sortAttributeTopSelling} DESC;";
             cm = new SqlCommand(query, cn);
             dr = cm.ExecuteReader();
 
@@ -129,7 +139,26 @@ namespace POS_System
                 dataGridViewSoldItems.Rows.Clear();
                 string dateFrom = $"{dateFromSoldItems.Value.Year}-{dateFromSoldItems.Value.Month}-{dateFromSoldItems.Value.Day}";
                 string dateTo = $"{dateToSoldItems.Value.Year}-{dateToSoldItems.Value.Month}-{dateToSoldItems.Value.Day}";
-                string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status;";
+
+                
+                string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY SUM(c.price - p.cost_price) DESC;";
+
+                // attach order by clause in query 
+                if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[0, 0]))
+                {
+                    // profit 
+                    sortAttributeSoldItems = sortOptionsSoldItems[0, 1];
+                    query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total >= c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+
+                }
+                else if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[1, 0]))
+                {
+                    // loss 
+                    sortAttributeSoldItems = this.sortOptionsSoldItems[1, 1];
+                    query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total < c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+                }
+
+               // string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY SUM({sortAttributeSoldItems}) DESC;";
                 cm = new SqlCommand(query, cn);
                 dr = cm.ExecuteReader();
 
@@ -153,6 +182,23 @@ namespace POS_System
                 query = $"SELECT ISNULL(sum(total), 0) FROM tblCart  WHERE status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' ;";
                 cm = new SqlCommand(query, cn);
                 lblTotal.Text = double.Parse(cm.ExecuteScalar().ToString()).ToString("#,##0.00");
+
+                // PROFIT 
+                query = $"SELECT ISNULL(SUM((c.price - p.cost_price)), 0) AS \"profit\" FROM tblProduct  AS p INNER JOIN tblCart  AS c ON p.pcode = c.pcode WHERE c.sdate BETWEEN '{dateFrom}' AND '{dateTo}';";
+                cm = new SqlCommand(query, cn);
+                double profit = double.Parse(cm.ExecuteScalar().ToString()); 
+                lblProfit.Text = profit.ToString("#,##0.00");
+
+                // LOSS
+                query = $"SELECT ISNULL(SUM((CASE WHEN (p.cost_price * c.qty >= c.total) THEN (p.cost_price * c.qty - c.total) ELSE 0 END)), 0) AS \"loss\" FROM tblProduct AS p INNER JOIN tblCart  AS c ON p.pcode = c.pcode WHERE c.sdate BETWEEN '{dateFrom}' AND '{dateTo}';";
+                cm = new SqlCommand(query, cn);
+                double loss = double.Parse(cm.ExecuteScalar().ToString());
+                lblLoss.Text = loss.ToString("#,##0.00");
+
+                // NETWORTH
+                double networth = ((profit - loss) > 0) ? (profit - loss) : 0;
+                lblNetworth.Text = networth.ToString("#,##0.00"); 
+                
                 cn.Close();
 
             }
@@ -201,7 +247,8 @@ namespace POS_System
                 dataGridView3.Rows.Clear(); 
                 cm = new SqlCommand("SELECT * FROM vwCriticalItems ;", cn);
                 dr = cm.ExecuteReader(); 
-                while (dr.Read())
+                while (dr.Read()) 
+                    
                 {
                     dataGridView3.Rows.Add(++i,
                         dr[0].ToString(),
@@ -215,7 +262,7 @@ namespace POS_System
                     ) ; 
                 }
                 cn.Close(); 
-
+                
             } catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
@@ -299,11 +346,11 @@ namespace POS_System
         {
             string dateFrom = $"{dateFromTopSelling.Value.Year}-{dateFromTopSelling.Value.Month}-{dateFromTopSelling.Value.Day}";
             string dateTo = $"{dateToTopSelling.Value.Year}-{dateToTopSelling.Value.Month}-{dateToTopSelling.Value.Day}";
-            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(sum(qty), 0) as 'qty', ISNULL(sum(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {this.sortAttribute} DESC;";
+            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(sum(qty), 0) as 'qty', ISNULL(sum(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {this.sortAttributeTopSelling} DESC;";
             string sellingPeriod = $"FROM: {dateFromTopSelling.Value}    TO: {dateToTopSelling.Value}";
 
             frmInventoryReport frm = new frmInventoryReport();
-            frm.LoadTopSelling(query, sellingPeriod, $"TOP SELLING ITEMS {this.sortOptions[cboSortBy.SelectedIndex, 0]}");
+            frm.LoadTopSelling(query, sellingPeriod, $"TOP SELLING ITEMS {this.sortOptionsTopSelling[cboSortBy.SelectedIndex, 0]}");
             frm.ShowDialog();
         }
 
@@ -311,11 +358,29 @@ namespace POS_System
         {
             string dateFrom = $"{dateFromSoldItems.Value.Year}-{dateFromSoldItems.Value.Month}-{dateFromSoldItems.Value.Day}";
             string dateTo = $"{dateToSoldItems.Value.Year}-{dateToSoldItems.Value.Month}-{dateToSoldItems.Value.Day}";
-            string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status;";
+           // string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status;";
+
+            string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY SUM(c.price - p.cost_price) DESC;";
+
+            // attach order by clause in query 
+            if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[0, 0]))
+            {
+                // profit 
+                sortAttributeSoldItems = sortOptionsSoldItems[0, 1];
+                query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total >= c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+
+            }
+            else if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[1, 0]))
+            {
+                // loss 
+                sortAttributeSoldItems = this.sortOptionsSoldItems[1, 1];
+                query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total < c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+            }
+
             string sellingPeriod = $"FROM: {dateFromSoldItems.Value}   TO: {dateToSoldItems.Value}";
 
             frmInventoryReport frm = new frmInventoryReport();
-            frm.LoadSoldItems(query, sellingPeriod);
+            frm.LoadSoldItems(query, sellingPeriod, lblNetworth.Text, lblProfit.Text, lblLoss.Text);
             frm.ShowDialog(); 
         }
 
@@ -356,16 +421,16 @@ namespace POS_System
             string dateFrom = $"{dateFromTopSelling.Value.Year}-{dateFromTopSelling.Value.Month}-{dateFromTopSelling.Value.Day}";
             string dateTo = $"{dateToTopSelling.Value.Year}-{dateToTopSelling.Value.Month}-{dateToTopSelling.Value.Day}";
 
-            if (cboSortBy.Text.Equals(this.sortOptions[0, 0]))
+            if (cboSortBy.Text.Equals(this.sortOptionsTopSelling[0, 0]))
             {
-                sortAttribute = this.sortOptions[0, 1];
+                sortAttributeTopSelling = this.sortOptionsTopSelling[0, 1];
             }
-            else if (cboSortBy.Text.Equals(this.sortOptions[1, 0]))
+            else if (cboSortBy.Text.Equals(this.sortOptionsTopSelling[1, 0]))
             {
-                sortAttribute = this.sortOptions[1, 1];
+                sortAttributeTopSelling = this.sortOptionsTopSelling[1, 1];
             }
 
-            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(SUM(qty), 0) as 'qty', ISNULL(SUM(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {sortAttribute} DESC;";
+            string query = $"SELECT TOP 10 pcode, pdesc, ISNULL(SUM(qty), 0) as 'qty', ISNULL(SUM(total), 0) as 'total'  FROM vwSoldItems WHERE sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY {sortAttributeTopSelling} DESC;";
 
             cn.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(query, cn);
@@ -380,7 +445,7 @@ namespace POS_System
 
             var chart = chartTopSelling;
             chart.Series[0].XValueMember = "pcode";
-            chart.Series[0].YValueMembers = this.sortOptions[cboSortBy.SelectedIndex, 1];
+            chart.Series[0].YValueMembers = this.sortOptionsTopSelling[cboSortBy.SelectedIndex, 1];
 
             if (cboSortBy.SelectedIndex == 0)
             {
@@ -422,12 +487,13 @@ namespace POS_System
 
         private void frmRecords_Load(object sender, EventArgs e)
         {
-            LoadSortByOptions();
+            LoadSortByOptionsTopSelling();
+            LoadSortByOptionsSoldItems();
         }
 
         private void cboSortBy_TextChanged(object sender, EventArgs e)
         {
-            this.sortAttribute = sortOptions[cboSortBy.SelectedIndex, 1];
+            this.sortAttributeTopSelling = sortOptionsTopSelling[cboSortBy.SelectedIndex, 1];
             LoadTopSellingRecord();
             LoadChartTopSelling(); 
         }
@@ -441,7 +507,22 @@ namespace POS_System
 
             string dateFrom = $"{dateFromSoldItems.Value.Year}-{dateFromSoldItems.Value.Month}-{dateFromSoldItems.Value.Day}";
             string dateTo = $"{dateToSoldItems.Value.Year}-{dateToSoldItems.Value.Month}-{dateToSoldItems.Value.Day}";
-            string query = $"SELECT p.pcode, p.pdesc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc ORDER BY total DESC;";
+            string query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY SUM(c.price - p.cost_price) DESC;";
+
+            // attach order by clause in query 
+            if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[0, 0]))
+            {
+                // profit 
+                sortAttributeSoldItems = sortOptionsSoldItems[0, 1];
+                query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total >= c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+
+            }
+            else if (cbFilterSoldItems.Text.Equals(this.sortOptionsSoldItems[1, 0]))
+            {
+                // loss 
+                sortAttributeSoldItems = this.sortOptionsSoldItems[1, 1];
+                query = $"SELECT p.pcode, p.pdesc, c.price, ISNULL(sum(c.qty), 0) AS qty, ISNULL(sum(c.disc), 0) AS disc, ISNULL(sum(c.total), 0)  AS total FROM tblCart AS c  INNER JOIN tblProduct AS p ON c.pcode = p.pcode  WHERE c.status like 'Sold' AND sdate BETWEEN '{dateFrom}' AND '{dateTo}' AND (c.total < c.qty*p.cost_price) GROUP BY p.pcode, p.pdesc, c.price, c.status ORDER BY sum(c.total) DESC;";
+            }
 
             frm.LoadChartSoldItems(query); 
 
@@ -461,6 +542,26 @@ namespace POS_System
             frmInventoryReport frm = new frmInventoryReport();
             frm.LoadStockIn(query, $"[ FROM: {dateFrom}    TO: {dateTo} ]");
             frm.ShowDialog();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTotal_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

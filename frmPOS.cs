@@ -275,8 +275,8 @@ namespace POS_System
             //double sales = subTotal - discount;
             double vat = sales * dbcon.GetGST();
             double vatable = sales - vat;
-            lblVat.Text = vat.ToString("#,##0.00");
-            lblVatable.Text = vatable.ToString("#,##0.00");
+            lblGst.Text = vat.ToString("#,##0.00");
+            lblAmount.Text = vatable.ToString("#,##0.00");
             lblDisplayTotal.Text = sales.ToString("#,##0.00");
         }
 

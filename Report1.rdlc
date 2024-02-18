@@ -511,7 +511,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pVatable.Value</Value>
+                    <Value>=Parameters!pAmount.Value</Value>
                     <Style>
                       <FontSize>8pt</FontSize>
                     </Style>
@@ -545,7 +545,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pVat.Value</Value>
+                    <Value>=Parameters!pGST.Value</Value>
                     <Style>
                       <FontSize>8pt</FontSize>
                     </Style>
@@ -681,7 +681,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Vatable</Value>
+                    <Value>Amount</Value>
                     <Style>
                       <FontSize>8pt</FontSize>
                     </Style>
@@ -713,7 +713,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Vat</Value>
+                    <Value>GST</Value>
                     <Style>
                       <FontSize>8pt</FontSize>
                     </Style>
@@ -1203,11 +1203,11 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="pVatable">
+    <ReportParameter Name="pAmount">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="pVat">
+    <ReportParameter Name="pGST">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1256,12 +1256,12 @@
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>pVatable</ParameterName>
+          <ParameterName>pAmount</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>pVat</ParameterName>
+          <ParameterName>pGST</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>2</ColumnIndex>
