@@ -60,7 +60,7 @@ namespace POS_System
             if (string.IsNullOrEmpty(txtRetype.Text)) return false;
             if (string.IsNullOrEmpty(txtName.Text)) return false;
             if (string.IsNullOrEmpty(cboRole.Text)) return false;
-            if (!cboRole.Text.Equals("System Administrator") || !cboRole.Text.Equals("Cashier")) return false;
+            if (!cboRole.Text.Equals("System Administrator") && !cboRole.Text.Equals("Cashier")) return false;
 
             return true; 
         }
@@ -404,6 +404,17 @@ namespace POS_System
                 txtPass.PasswordChar = '•';
                 txtRetype.PasswordChar = '•';
             }
+        }
+
+        private void refreshUserListPB_Click(object sender, EventArgs e)
+        {
+            // refresh the list 
+            LoadUserList(); 
+        }
+
+        private void cboRole_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true; 
         }
     }
 }
