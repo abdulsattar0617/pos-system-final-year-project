@@ -29,10 +29,10 @@ namespace POS_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,6 +84,7 @@ namespace POS_System
             this.btnActivate = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.refreshUserListPB = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
@@ -96,6 +97,7 @@ namespace POS_System
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUserList)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshUserListPB)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -129,7 +131,7 @@ namespace POS_System
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 21);
+            this.label1.Size = new System.Drawing.Size(161, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "USER ACCOUNT";
             // 
@@ -140,7 +142,7 @@ namespace POS_System
             this.metroTabControl1.Controls.Add(this.tabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(178, 150);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(633, 330);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -183,7 +185,7 @@ namespace POS_System
             this.cbShowPassCreateAcc.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbShowPassCreateAcc.Location = new System.Drawing.Point(459, 39);
             this.cbShowPassCreateAcc.Name = "cbShowPassCreateAcc";
-            this.cbShowPassCreateAcc.Size = new System.Drawing.Size(120, 17);
+            this.cbShowPassCreateAcc.Size = new System.Drawing.Size(154, 23);
             this.cbShowPassCreateAcc.TabIndex = 74;
             this.cbShowPassCreateAcc.Text = "SHOW PASSWORD";
             this.cbShowPassCreateAcc.UseVisualStyleBackColor = true;
@@ -221,7 +223,7 @@ namespace POS_System
             // 
             this.txtName.Location = new System.Drawing.Point(223, 186);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(356, 25);
+            this.txtName.Size = new System.Drawing.Size(356, 29);
             this.txtName.TabIndex = 9;
             // 
             // label6
@@ -229,7 +231,7 @@ namespace POS_System
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(45, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 17);
+            this.label6.Size = new System.Drawing.Size(58, 23);
             this.label6.TabIndex = 8;
             this.label6.Text = "NAME";
             // 
@@ -241,15 +243,16 @@ namespace POS_System
             "Cashier"});
             this.cboRole.Location = new System.Drawing.Point(223, 155);
             this.cboRole.Name = "cboRole";
-            this.cboRole.Size = new System.Drawing.Size(356, 25);
+            this.cboRole.Size = new System.Drawing.Size(356, 29);
             this.cboRole.TabIndex = 7;
+            this.cboRole.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboRole_KeyPress);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(45, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 17);
+            this.label5.Size = new System.Drawing.Size(50, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "ROLE";
             // 
@@ -258,7 +261,7 @@ namespace POS_System
             this.txtRetype.Location = new System.Drawing.Point(223, 124);
             this.txtRetype.Name = "txtRetype";
             this.txtRetype.PasswordChar = '•';
-            this.txtRetype.Size = new System.Drawing.Size(356, 25);
+            this.txtRetype.Size = new System.Drawing.Size(356, 29);
             this.txtRetype.TabIndex = 5;
             // 
             // label4
@@ -266,7 +269,7 @@ namespace POS_System
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(45, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 17);
+            this.label4.Size = new System.Drawing.Size(179, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "CONFIRM PASSWORD";
             // 
@@ -275,7 +278,7 @@ namespace POS_System
             this.txtPass.Location = new System.Drawing.Point(223, 93);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '•';
-            this.txtPass.Size = new System.Drawing.Size(356, 25);
+            this.txtPass.Size = new System.Drawing.Size(356, 29);
             this.txtPass.TabIndex = 3;
             // 
             // label3
@@ -283,7 +286,7 @@ namespace POS_System
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(45, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 17);
+            this.label3.Size = new System.Drawing.Size(99, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "PASSWORD";
             // 
@@ -291,7 +294,7 @@ namespace POS_System
             // 
             this.txtUser.Location = new System.Drawing.Point(223, 62);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(356, 25);
+            this.txtUser.Size = new System.Drawing.Size(356, 29);
             this.txtUser.TabIndex = 1;
             // 
             // label2
@@ -299,7 +302,7 @@ namespace POS_System
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(45, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.Size = new System.Drawing.Size(98, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "USERNAME";
             // 
@@ -343,7 +346,7 @@ namespace POS_System
             this.cbShowPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbShowPassword.Location = new System.Drawing.Point(459, 39);
             this.cbShowPassword.Name = "cbShowPassword";
-            this.cbShowPassword.Size = new System.Drawing.Size(120, 17);
+            this.cbShowPassword.Size = new System.Drawing.Size(154, 23);
             this.cbShowPassword.TabIndex = 73;
             this.cbShowPassword.Text = "SHOW PASSWORD";
             this.cbShowPassword.UseVisualStyleBackColor = true;
@@ -356,7 +359,7 @@ namespace POS_System
             this.cbChangeName.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChangeName.Location = new System.Drawing.Point(349, 39);
             this.cbChangeName.Name = "cbChangeName";
-            this.cbChangeName.Size = new System.Drawing.Size(104, 17);
+            this.cbChangeName.Size = new System.Drawing.Size(131, 23);
             this.cbChangeName.TabIndex = 72;
             this.cbChangeName.Text = "CHANGE NAME";
             this.cbChangeName.UseVisualStyleBackColor = true;
@@ -367,7 +370,7 @@ namespace POS_System
             this.txtRetypeNewPassChangePass.Location = new System.Drawing.Point(223, 155);
             this.txtRetypeNewPassChangePass.Name = "txtRetypeNewPassChangePass";
             this.txtRetypeNewPassChangePass.PasswordChar = '•';
-            this.txtRetypeNewPassChangePass.Size = new System.Drawing.Size(356, 25);
+            this.txtRetypeNewPassChangePass.Size = new System.Drawing.Size(356, 29);
             this.txtRetypeNewPassChangePass.TabIndex = 71;
             this.txtRetypeNewPassChangePass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRetypeNewPassChangePass_KeyPress);
             // 
@@ -376,7 +379,7 @@ namespace POS_System
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(45, 158);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 17);
+            this.label8.Size = new System.Drawing.Size(222, 23);
             this.label8.TabIndex = 70;
             this.label8.Text = "CONFIRM NEW PASSWORD";
             // 
@@ -413,7 +416,7 @@ namespace POS_System
             this.txtNameChangePass.Enabled = false;
             this.txtNameChangePass.Location = new System.Drawing.Point(223, 186);
             this.txtNameChangePass.Name = "txtNameChangePass";
-            this.txtNameChangePass.Size = new System.Drawing.Size(356, 25);
+            this.txtNameChangePass.Size = new System.Drawing.Size(356, 29);
             this.txtNameChangePass.TabIndex = 67;
             this.txtNameChangePass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNameChangePass_KeyPress);
             // 
@@ -422,7 +425,7 @@ namespace POS_System
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(45, 189);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.Size = new System.Drawing.Size(58, 23);
             this.label7.TabIndex = 66;
             this.label7.Text = "NAME";
             // 
@@ -431,7 +434,7 @@ namespace POS_System
             this.txtNewPassChangePass.Location = new System.Drawing.Point(223, 124);
             this.txtNewPassChangePass.Name = "txtNewPassChangePass";
             this.txtNewPassChangePass.PasswordChar = '•';
-            this.txtNewPassChangePass.Size = new System.Drawing.Size(356, 25);
+            this.txtNewPassChangePass.Size = new System.Drawing.Size(356, 29);
             this.txtNewPassChangePass.TabIndex = 65;
             this.txtNewPassChangePass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNewPassChangePass_KeyPress);
             // 
@@ -440,7 +443,7 @@ namespace POS_System
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(45, 127);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 17);
+            this.label9.Size = new System.Drawing.Size(142, 23);
             this.label9.TabIndex = 64;
             this.label9.Text = "NEW PASSWORD";
             // 
@@ -449,7 +452,7 @@ namespace POS_System
             this.txtOldPassChangePass.Location = new System.Drawing.Point(223, 93);
             this.txtOldPassChangePass.Name = "txtOldPassChangePass";
             this.txtOldPassChangePass.PasswordChar = '•';
-            this.txtOldPassChangePass.Size = new System.Drawing.Size(356, 25);
+            this.txtOldPassChangePass.Size = new System.Drawing.Size(356, 29);
             this.txtOldPassChangePass.TabIndex = 63;
             this.txtOldPassChangePass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOldPassChangePass_KeyPress);
             // 
@@ -458,7 +461,7 @@ namespace POS_System
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(45, 96);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 17);
+            this.label10.Size = new System.Drawing.Size(137, 23);
             this.label10.TabIndex = 62;
             this.label10.Text = "OLD PASSWORD";
             // 
@@ -467,7 +470,7 @@ namespace POS_System
             this.txtUserChangePass.Enabled = false;
             this.txtUserChangePass.Location = new System.Drawing.Point(223, 62);
             this.txtUserChangePass.Name = "txtUserChangePass";
-            this.txtUserChangePass.Size = new System.Drawing.Size(356, 25);
+            this.txtUserChangePass.Size = new System.Drawing.Size(356, 29);
             this.txtUserChangePass.TabIndex = 61;
             // 
             // label11
@@ -475,7 +478,7 @@ namespace POS_System
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(45, 65);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 17);
+            this.label11.Size = new System.Drawing.Size(98, 23);
             this.label11.TabIndex = 60;
             this.label11.Text = "USERNAME";
             // 
@@ -516,10 +519,10 @@ namespace POS_System
             // 
             // 
             this.txtUserSearch.CustomButton.Image = null;
-            this.txtUserSearch.CustomButton.Location = new System.Drawing.Point(513, 2);
-            this.txtUserSearch.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUserSearch.CustomButton.Location = new System.Drawing.Point(599, 2);
+            this.txtUserSearch.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtUserSearch.CustomButton.Name = "";
-            this.txtUserSearch.CustomButton.Size = new System.Drawing.Size(20, 18);
+            this.txtUserSearch.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtUserSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUserSearch.CustomButton.TabIndex = 1;
             this.txtUserSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -550,19 +553,19 @@ namespace POS_System
             // 
             this.dataGridViewUserList.AllowUserToAddRows = false;
             this.dataGridViewUserList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.AliceBlue;
-            this.dataGridViewUserList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue;
+            this.dataGridViewUserList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewUserList.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewUserList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewUserList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUserList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUserList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewUserList.ColumnHeadersHeight = 30;
             this.dataGridViewUserList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewUserList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -571,26 +574,27 @@ namespace POS_System
             this.Column2,
             this.Column3,
             this.Select});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.MintCream;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(205)))), ((int)(((byte)(235)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewUserList.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MintCream;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(205)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewUserList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewUserList.EnableHeadersVisualStyles = false;
             this.dataGridViewUserList.Location = new System.Drawing.Point(0, 48);
             this.dataGridViewUserList.Name = "dataGridViewUserList";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.LemonChiffon;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUserList.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LemonChiffon;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUserList.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewUserList.RowHeadersVisible = false;
+            this.dataGridViewUserList.RowHeadersWidth = 51;
             this.dataGridViewUserList.RowTemplate.Height = 25;
             this.dataGridViewUserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUserList.Size = new System.Drawing.Size(625, 187);
@@ -601,29 +605,33 @@ namespace POS_System
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "#";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Visible = false;
-            this.Column1.Width = 41;
+            this.Column1.Width = 49;
             // 
             // ACTIVE
             // 
             this.ACTIVE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ACTIVE.HeaderText = "ACTIVE";
             this.ACTIVE.Image = global::POS_System.Properties.Resources.checked__1_;
+            this.ACTIVE.MinimumWidth = 6;
             this.ACTIVE.Name = "ACTIVE";
-            this.ACTIVE.Width = 53;
+            this.ACTIVE.Width = 70;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "USERNAME";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 99;
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "NAME";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Select
@@ -631,12 +639,14 @@ namespace POS_System
             this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Select.HeaderText = "";
             this.Select.Image = global::POS_System.Properties.Resources.right_arrow;
+            this.Select.MinimumWidth = 6;
             this.Select.Name = "Select";
-            this.Select.Width = 5;
+            this.Select.Width = 6;
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.refreshUserListPB);
             this.panel5.Controls.Add(this.txtUserADA);
             this.panel5.Controls.Add(this.btnDeactivate);
             this.panel5.Controls.Add(this.btnActivate);
@@ -652,10 +662,10 @@ namespace POS_System
             // 
             // 
             this.txtUserADA.CustomButton.Image = null;
-            this.txtUserADA.CustomButton.Location = new System.Drawing.Point(269, 2);
-            this.txtUserADA.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUserADA.CustomButton.Location = new System.Drawing.Point(303, 2);
+            this.txtUserADA.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtUserADA.CustomButton.Name = "";
-            this.txtUserADA.CustomButton.Size = new System.Drawing.Size(20, 18);
+            this.txtUserADA.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtUserADA.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUserADA.CustomButton.TabIndex = 1;
             this.txtUserADA.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -675,7 +685,7 @@ namespace POS_System
             this.txtUserADA.SelectionLength = 0;
             this.txtUserADA.SelectionStart = 0;
             this.txtUserADA.ShortcutsEnabled = true;
-            this.txtUserADA.Size = new System.Drawing.Size(340, 28);
+            this.txtUserADA.Size = new System.Drawing.Size(329, 28);
             this.txtUserADA.TabIndex = 73;
             this.txtUserADA.UseSelectable = true;
             this.txtUserADA.WaterMark = "select username from below list";
@@ -690,7 +700,7 @@ namespace POS_System
             this.btnDeactivate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeactivate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeactivate.ForeColor = System.Drawing.Color.White;
-            this.btnDeactivate.Location = new System.Drawing.Point(487, 15);
+            this.btnDeactivate.Location = new System.Drawing.Point(476, 15);
             this.btnDeactivate.Name = "btnDeactivate";
             this.btnDeactivate.Size = new System.Drawing.Size(110, 28);
             this.btnDeactivate.TabIndex = 72;
@@ -706,7 +716,7 @@ namespace POS_System
             this.btnActivate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActivate.ForeColor = System.Drawing.Color.White;
-            this.btnActivate.Location = new System.Drawing.Point(371, 15);
+            this.btnActivate.Location = new System.Drawing.Point(360, 15);
             this.btnActivate.Name = "btnActivate";
             this.btnActivate.Size = new System.Drawing.Size(110, 28);
             this.btnActivate.TabIndex = 71;
@@ -719,18 +729,33 @@ namespace POS_System
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::POS_System.Properties.Resources.checked__1_;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
             this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn2.HeaderText = "";
             this.dataGridViewImageColumn2.Image = global::POS_System.Properties.Resources.right_arrow;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 125;
+            // 
+            // refreshUserListPB
+            // 
+            this.refreshUserListPB.Image = global::POS_System.Properties.Resources.refresh;
+            this.refreshUserListPB.Location = new System.Drawing.Point(592, 15);
+            this.refreshUserListPB.Name = "refreshUserListPB";
+            this.refreshUserListPB.Size = new System.Drawing.Size(28, 28);
+            this.refreshUserListPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.refreshUserListPB.TabIndex = 6;
+            this.refreshUserListPB.TabStop = false;
+            this.refreshUserListPB.Click += new System.EventHandler(this.refreshUserListPB_Click);
             // 
             // frmUserAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(989, 644);
@@ -759,6 +784,7 @@ namespace POS_System
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUserList)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.refreshUserListPB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -816,5 +842,6 @@ namespace POS_System
         public System.Windows.Forms.Button btnDeactivate;
         public System.Windows.Forms.Button btnActivate;
         private System.Windows.Forms.CheckBox cbShowPassCreateAcc;
+        private System.Windows.Forms.PictureBox refreshUserListPB;
     }
 }
