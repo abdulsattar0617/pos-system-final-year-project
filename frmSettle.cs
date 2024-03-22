@@ -17,7 +17,7 @@ namespace POS_System
             this.parentForm = frm;
             this.KeyPreview = true; 
         }
-
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Dispose();

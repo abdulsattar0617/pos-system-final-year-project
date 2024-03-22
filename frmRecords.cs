@@ -543,25 +543,6 @@ namespace POS_System
             frm.LoadStockIn(query, $"[ FROM: {dateFrom}    TO: {dateTo} ]");
             frm.ShowDialog();
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTotal_Click(object sender, EventArgs e)
-        {
-
-        }
+         
     }
 }

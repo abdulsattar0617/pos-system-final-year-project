@@ -261,7 +261,7 @@ namespace POS_System
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(884, 497);
+            this.tabPage1.Size = new System.Drawing.Size(884, 430);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "TOP SELLING";
             // 
@@ -272,7 +272,7 @@ namespace POS_System
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 447);
+            this.panel2.Size = new System.Drawing.Size(884, 380);
             this.panel2.TabIndex = 3;
             // 
             // dataGridViewTopSelling
@@ -324,7 +324,7 @@ namespace POS_System
             this.dataGridViewTopSelling.RowHeadersWidth = 72;
             this.dataGridViewTopSelling.RowTemplate.Height = 25;
             this.dataGridViewTopSelling.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewTopSelling.Size = new System.Drawing.Size(510, 447);
+            this.dataGridViewTopSelling.Size = new System.Drawing.Size(510, 380);
             this.dataGridViewTopSelling.TabIndex = 6;
             // 
             // Column1
@@ -376,7 +376,7 @@ namespace POS_System
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(559, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(325, 447);
+            this.panel9.Size = new System.Drawing.Size(325, 380);
             this.panel9.TabIndex = 8;
             // 
             // chartTopSelling
@@ -392,7 +392,7 @@ namespace POS_System
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartTopSelling.Series.Add(series1);
-            this.chartTopSelling.Size = new System.Drawing.Size(325, 447);
+            this.chartTopSelling.Size = new System.Drawing.Size(325, 380);
             this.chartTopSelling.TabIndex = 7;
             this.chartTopSelling.Text = "chart1";
             // 
@@ -648,7 +648,6 @@ namespace POS_System
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(884, 119);
             this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label8
             // 
@@ -737,7 +736,6 @@ namespace POS_System
             this.label7.Size = new System.Drawing.Size(92, 17);
             this.label7.TabIndex = 18;
             this.label7.Text = "TOTAL PROFIT";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -748,7 +746,6 @@ namespace POS_System
             this.label6.Size = new System.Drawing.Size(84, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "TOTAL SALES";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // linkChartSoldItems
             // 
@@ -820,7 +817,6 @@ namespace POS_System
             this.lblTotal.TabIndex = 12;
             this.lblTotal.Text = "0.00";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // dateToSoldItems
             // 
@@ -856,7 +852,7 @@ namespace POS_System
             this.tabPage3.Controls.Add(this.panel5);
             this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(884, 497);
+            this.tabPage3.Size = new System.Drawing.Size(884, 430);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CRITICAL STOCKS";
             // 
@@ -913,7 +909,7 @@ namespace POS_System
             this.dataGridView3.RowHeadersWidth = 72;
             this.dataGridView3.RowTemplate.Height = 25;
             this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(884, 447);
+            this.dataGridView3.Size = new System.Drawing.Size(884, 380);
             this.dataGridView3.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn5
@@ -1026,7 +1022,7 @@ namespace POS_System
             this.tabPage4.Controls.Add(this.panel6);
             this.tabPage4.Location = new System.Drawing.Point(4, 38);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(884, 497);
+            this.tabPage4.Size = new System.Drawing.Size(884, 430);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "INVENTORY LIST";
             // 
@@ -1083,7 +1079,7 @@ namespace POS_System
             this.dataGridView4.RowHeadersWidth = 72;
             this.dataGridView4.RowTemplate.Height = 25;
             this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(884, 447);
+            this.dataGridView4.Size = new System.Drawing.Size(884, 380);
             this.dataGridView4.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn12
@@ -1196,7 +1192,7 @@ namespace POS_System
             this.tabPage5.Controls.Add(this.panel7);
             this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(884, 497);
+            this.tabPage5.Size = new System.Drawing.Size(884, 430);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "CANCELLED ORDER";
             // 
@@ -1256,7 +1252,7 @@ namespace POS_System
             this.dataGridViewCancelledOrder.RowHeadersWidth = 72;
             this.dataGridViewCancelledOrder.RowTemplate.Height = 25;
             this.dataGridViewCancelledOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCancelledOrder.Size = new System.Drawing.Size(884, 447);
+            this.dataGridViewCancelledOrder.Size = new System.Drawing.Size(884, 380);
             this.dataGridViewCancelledOrder.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn21
@@ -1445,7 +1441,7 @@ namespace POS_System
             this.tabPage6.Controls.Add(this.panel8);
             this.tabPage6.Location = new System.Drawing.Point(4, 38);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(884, 497);
+            this.tabPage6.Size = new System.Drawing.Size(884, 430);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "STOCK IN HISTORY";
             // 
@@ -1501,7 +1497,7 @@ namespace POS_System
             this.dateGridViewStockInHistory.RowHeadersWidth = 72;
             this.dateGridViewStockInHistory.RowTemplate.Height = 25;
             this.dateGridViewStockInHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dateGridViewStockInHistory.Size = new System.Drawing.Size(884, 447);
+            this.dateGridViewStockInHistory.Size = new System.Drawing.Size(884, 380);
             this.dateGridViewStockInHistory.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn25
@@ -1686,6 +1682,7 @@ namespace POS_System
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRecords";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmRecords_Load);
