@@ -15,6 +15,7 @@ The Point of Sale & Inventory Management System is designed to serve two roles: 
 - Utilizes date filters.
 - Uses data analytics charts for information representation, such as PIE charts.
 - Includes individual modules for Users, Products, Brands, and more.
+- Data Analytics
 - Easy setup and use.
 
 ## Installation Instructions
