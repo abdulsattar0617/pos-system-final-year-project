@@ -38,6 +38,6 @@ To contribute to the project, clone the repository to your local machine using t
 ## License
 This project is licensed under the GPL license.
 
-## Demo
+## Dashboard Screen (Admin)
 ![Software Demo](https://drive.google.com/uc?id=1JhnAuFfURAKe8__En7Zs0viMohvdoNoW)
 
