@@ -37,7 +37,7 @@ To contribute to the project, clone the repository to your local machine using t
 [https://github.com/abdulsattar0617/pos-system-final-year-project.git](https://github.com/abdulsattar0617/pos-system-final-year-project.git)
 
 ## License
-This project is licensed under the GPL license.
+This project is licensed under the MIT license.
 
 ## Dashboard Screen (Admin)
 ![Software Demo](https://drive.google.com/uc?id=1JhnAuFfURAKe8__En7Zs0viMohvdoNoW)
