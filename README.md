@@ -1,6 +1,9 @@
 # Point of Sale & Inventory Management System
 Final Year College Project made on Concept of Point of Sale. Project Report, Project Code, PPT and synopsis. Research Paper Project.
 
+## Downloads
+[MSI Installer](https://github.com/abdulsattar0617/pos-system-final-year-project/blob/main/Documentation/Point%20of%20Sale.msi)
+
 ## Description
 The Point of Sale & Inventory Management System is designed to serve two roles: cashier and administrator. 
 
