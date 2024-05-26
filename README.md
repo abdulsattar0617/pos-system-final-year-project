@@ -1,6 +1,9 @@
 # Point of Sale & Inventory Management System
 Final Year College Project made on Concept of Point of Sale. Project Report, Project Code, PPT and synopsis. Research Paper Project.
 
+## Dashboard Screen (Admin)
+![Software Demo](https://drive.google.com/uc?id=1JhnAuFfURAKe8__En7Zs0viMohvdoNoW)
+
 ## Downloads
 [MSI Installer](https://github.com/abdulsattar0617/pos-system-final-year-project/blob/main/Documentation/Point%20of%20Sale.msi)
 
@@ -47,6 +50,5 @@ This project is licensed under the MIT license.
 ### Youtube Presentation of Project : [view](https://youtu.be/ALo4K4cmcp8)
 ### PPT: [view](https://github.com/abdulsattar0617/pos-system-final-year-project/blob/main/Documentation/POS%20PROJECT%20PRESENTATION%20-%20Abdul%20Sattar.pdf)
 
-## Dashboard Screen (Admin)
-![Software Demo](https://drive.google.com/uc?id=1JhnAuFfURAKe8__En7Zs0viMohvdoNoW)
+
 
