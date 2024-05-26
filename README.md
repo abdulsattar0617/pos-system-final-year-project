@@ -29,16 +29,20 @@ The software installation is straightforward, facilitated by an MSI installer fi
 3. Specify the software installation location and click 'Next'.
 4. Click the 'Install' button to start the installation.
 5. Installation completed.
+6. After installation change the file permission for database file, to do this simply follow the [tutorial](https://youtu.be/koVA7PMFUqA).
 
 ## Usage
 The software is user-friendly, requiring simple mouse clicks and keyboard presses to operate.
 
 ## Contributing
 To contribute to the project, clone the repository to your local machine using the following link and suggest improvements:
-[https://github.com/abdulsattar0617/pos-system-final-year-project.git](https://github.com/abdulsattar0617/pos-system-final-year-project.git)
+[clone repo](https://github.com/abdulsattar0617/pos-system-final-year-project.git)
 
 ## License
 This project is licensed under the MIT license.
+
+### Youtube Presentation of Project : [view](https://youtu.be/ALo4K4cmcp8)
+### PPT: [view](https://github.com/abdulsattar0617/pos-system-final-year-project/blob/main/Documentation/POS%20PROJECT%20PRESENTATION%20-%20Abdul%20Sattar.pdf)
 
 ## Dashboard Screen (Admin)
 ![Software Demo](https://drive.google.com/uc?id=1JhnAuFfURAKe8__En7Zs0viMohvdoNoW)
